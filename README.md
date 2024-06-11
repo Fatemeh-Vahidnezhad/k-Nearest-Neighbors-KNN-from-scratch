@@ -60,6 +60,7 @@ y_pred = [knn.prediction(point=row) for row in x_test]
 #MSE:
 print('MSE: ', MSE(y_test, y_pred) )
 
+'''
 
 # Contributing
 Contributions to this project are welcome! Here's how you can contribute:
