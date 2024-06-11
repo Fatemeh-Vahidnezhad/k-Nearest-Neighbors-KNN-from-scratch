@@ -40,7 +40,7 @@ cd knn-from-scratch
 To use this kNN implementation, you need to import the KNN class from the knn.py file (assuming your main script is named knn.py).
 Here is a quick example of how to use the class:
 
-
+```python
 from knn import KNN
 import numpy as np
 from sklearn.datasets import load_iris
