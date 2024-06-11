@@ -19,7 +19,9 @@ and the class receiving the highest number of votes is chosen as the final class
 
 ## Features
 kNN Algorithm: Custom implementation that allows for easy adjustment of the k value.
+
 Data Shuffling: Ensures that the data does not hold any inherent biases due to order.
+
 Data Splitting: Separates data into training and testing sets for model evaluation.
 ## Prerequisites
 Before you begin, ensure you have the following installed:
