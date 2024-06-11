@@ -19,6 +19,7 @@ Clone this repository to your local machine using the following command:
 
 
 git clone https://github.com/Fatemeh-Vahidnezhad/k-Nearest-Neighbors-KNN-from-scratch.git
+
 cd knn-from-scratch
 ## Usage
 To use this kNN implementation, you need to import the KNN class from the knn.py file (assuming your main script is named knn.py).
