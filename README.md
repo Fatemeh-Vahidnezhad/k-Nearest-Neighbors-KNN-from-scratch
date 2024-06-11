@@ -43,19 +43,23 @@ Here is a quick example of how to use the class:
 
 from knn import KNN
 import numpy as np
+from sklearn.datasets import load_iris
 
-#Example Data (replace with your data)
-X_train = np.array([[1, 2], [3, 4], [5, 6]])
-y_train = np.array([0, 1, 0])
-X_test = np.array([[2, 3]])
+#load the dataset:
+iris = load_iris()
 
-#Create and train the kNN classifier
-classifier = KNN(k=3)
-classifier.fit(X_train, y_train)
+#handle the dataset(shuffle and split)
+obj = DatasetHandler(iris.data, iris.target)
+obj.shuffle_split(0.3)
+x_train, y_train, x_test, y_test = obj.get_train_test()
 
-#Predict the class of the test instance
-prediction = classifier.predict(X_test)
-print("Predicted class:", prediction)
+#predict y_test
+knn = KNN(3, x_train, y_train )
+y_pred = [knn.prediction(point=row) for row in x_test]
+
+#MSE:
+print('MSE: ', MSE(y_test, y_pred) )
+
 ## Contributing
 Contributions to this project are welcome! Here's how you can contribute:
 
